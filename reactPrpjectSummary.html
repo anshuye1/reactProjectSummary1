@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div style="border: 1px solid #18b3ec;text-align: left;padding: 20px 40px;width: 500px;color:#333;float: left;">
+        <h3>重谈react生命周期</h3>
+        <p>
+            <b style="color:#18b3ec">1.组件的生命周期可分为三个状态</b><br/>
+              <i style="color:red">a:</i> Mounting:已插入真是的dom。<br/>
+              <i style="color:red">b:</i> Updating:正在被重新渲染。<br/>
+              <i style="color:red">c:</i> 被移除真实的dom。<br/>
+            <br>
+            <b style="color:#18b3ec">2.生命周期的方法有:</b><br/>
+              <i style="color:red">a:</i> componentWillMount 渲染前  => <br/>渲染 => <br/>componentDidMount 第一次渲染<br/>
+              <i style="color:red">b:</i> 新state和props => <br/>shouldComponentUpdate 需要改变组件 <br/> componentWillUpdate 更新前(nextProps,nextPropsObj)(新state/props) <br/>componentDidUpdate 更新后(preProps,prePropsObj)(前一个state/props)<br>
+              <i style="color:red">c:</i> componentWillUnMount 移除组件
+        </p>
+    </div>
+    <div style="border: 1px solid #18b3ec;text-align: left;padding: 20px 40px;width: 500px;color:#333;float: left;height: 500px;margin-left:15px">
+        <div style="background:url('./git.jpg') left center;background-size:100% 100%;height: 100%;"> </div>
+    </div>
+</body>
+</html>
